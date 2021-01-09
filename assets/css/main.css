@@ -1813,7 +1813,7 @@ input, select, textarea {
 		background: #151e29;
 		border-radius: 0.375em;
 		border: none;
-		border: solid 1px rgba(210, 215, 217, 0.75);
+		border: solid 1px #000;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -1921,7 +1921,7 @@ input, select, textarea {
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
-				background: #ffffff;
+				background: #151E29;
 				border-radius: 0.375em;
 				border: solid 1px rgba(210, 215, 217, 0.75);
 				content: '';
@@ -2158,6 +2158,7 @@ input, select, textarea {
 		ul.actions li {
 
 			vertical-align: middle;
+			margin-left:5px;
 		}
 
 		ul.actions.special {
@@ -2441,7 +2442,7 @@ input, select, textarea {
 		background-color: #151E29;
 		border-radius: 0.375em;
 		border: 0;
-        border: 1px solid #151E29;
+        border: 1px solid #000;
 		color: #fff !important;
 		cursor: pointer;
 		display: inline-block;
@@ -2515,8 +2516,8 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #000;
-			border: 1px solid rgba(210, 215, 217, 0.75);
+			background-color: #151E29;
+			border: 1px solid #52EDC7;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2967,7 +2968,6 @@ display: -moz-flex;
 		-ms-flex-direction: row-reverse;
 		flex-direction: row-reverse;
 		min-height: 100vh;
-		min-width:100%;
 	}
 
 /* Main */
@@ -2987,7 +2987,7 @@ display: -moz-flex;
 		#main > .inner {
 			padding: 0 6em 0.1em 6em ;
 			margin: 0 auto;
-
+			max-width: 110em;
 		}
 
 			#main > .inner > section {
@@ -3090,8 +3090,8 @@ display: -moz-flex;
 		transition: margin-left 0.5s ease, box-shadow 0.5s ease;
 		font-size: 0.9em;
 		position: relative;
-		width: 20em;
-border-right: 1px solid #000;
+		width: 26em;
+		border-right:1px solid #000;
 	}
 
 		#sidebar h2 {
@@ -3101,12 +3101,12 @@ border-right: 1px solid #000;
 		#sidebar > .inner {
 			padding: 2.2222222222em 2.2222222222em 2.4444444444em 2.2222222222em ;
 			position: relative;
-			width: 20em;
+			width: 26em;
 		}
 
 			#sidebar > .inner > * {
 
-				margin: 0 0 2.5em 0;
+				margin: 0 0 3.5em 0;
 
 			}
 
@@ -3157,7 +3157,6 @@ border-right: 1px solid #000;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
-				
 			}
 
 			#sidebar .toggle:before {
@@ -3175,16 +3174,16 @@ border-right: 1px solid #000;
 		#sidebar.inactive {
 			margin-left: -26em;
 		}
-/* On screens that are 1680px or less, set the width to 22em*/
+
 		@media screen and (max-width: 1680px) {
 
 			#sidebar {
-				width: 20em;
+				width: 24em;
 			}
 
 				#sidebar > .inner {
 					padding: 1.6666666667em 1.6666666667em 1.3333333333em 1.6666666667em ;
-					width: 20em;
+					width: 24em;
 				}
 
 					#sidebar > .inner > .alt {
@@ -3195,7 +3194,7 @@ border-right: 1px solid #000;
 
 				#sidebar .toggle {
 					height: 6.25em;
-					left: 20em;
+					left: 24em;
 					line-height: 6.25em;
 					text-indent: 5em;
 					width: 5em;
@@ -3206,7 +3205,7 @@ border-right: 1px solid #000;
 					}
 
 				#sidebar.inactive {
-					margin-left: -20em;
+					margin-left: -24em;
 				}
 
 		}
@@ -3275,9 +3274,8 @@ border-right: 1px solid #000;
 				}
 
 				#sidebar .toggle:after {
-					background: rgba(222, 225, 226, 0.75);
-					border-radius: 0.375em;
 					background-color:#151E29;
+					border-radius: 0.375em;
 					content: '';
 					height: 3.5em;
 					left: 1em;
@@ -4600,7 +4598,7 @@ color:#f5f6f7;
   font-weight: 600;
 }
 .work-grid-info p{
-
+font-family:"Roboto Slab", serif;
   margin: 0;
   font-size: 15px;
 color:#f5f6f7;
@@ -4846,7 +4844,7 @@ position:relative;
 }
 
 #flip > div > div {
-  color:#000;
+  color:#fff;
   padding:2px 8px 2px;
   height:48px;
   margin-bottom:45px;
@@ -4855,14 +4853,16 @@ position:relative;
 }
 
 #flip div:first-child {
-  animation: show 3s linear infinite;
+  animation: show 1.5s linear infinite;
 }
 
-#flip div div {
-  background:#52edc7;
-}
+
 #flip div:first-child div {
   background:#52edc7;
+  border:1px solid #000;
+  color:#000;
+  font-family:"Roboto Slab", serif;
+  
 }
 
 @keyframes show {
@@ -5285,3 +5285,12 @@ body {
 @keyframes animate-positive{
     0%{ width: 0; }
 }
+.col-centered{
+float: none;
+margin: 0 auto;
+margin-top:10px;
+}
+div[id*='g-recaptcha1'] 
+{display:none;}
+div[id*='g-recaptcha2'] 
+{display:none;}

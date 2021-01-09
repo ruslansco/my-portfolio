@@ -59,8 +59,6 @@
 <h2>Ruslan Shakirov</h2>
 
  <p>B.S. Computer Science 19' | Software Developer | Data Engineer </p>
-
-
 <p>
 Languages: Python, Java ,PHP, SQL, JavaScript, HTML5/CSS3. <br>
 Frameworks: Django, Flask, jQuery, Bootstrap, Android Studio, Hadoop, PySpark, Selenium and etc.
@@ -70,13 +68,14 @@ Frameworks: Django, Flask, jQuery, Bootstrap, Android Studio, Hadoop, PySpark, S
 <li style="margin:3px;">
 <a class="button big" href="https://linkedin.com/in/ruslansco" target="blank">LinkedIn</a>
 </li>
+<div  class="button-wrapper" >
 <li style="margin:3px;">
-<a class="button big" href="/" target="blank">Resume</a>
+<a class="button big"href="https://drive.google.com/file/d/1hFcAMW5IGC_x6GBEwdI1jeBiTOpqKh1d/view?usp=sharing" target="blank">Resume</a>
 </li>
+</div>
 <li style="margin:3px;">
-<a class="button big" href="#contact">Contact ME</a>
+<a class="button big" href="#contact">Contact me</a>
 </li>
-
 </ul>
 
 </header>
@@ -101,7 +100,7 @@ Frameworks: Django, Flask, jQuery, Bootstrap, Android Studio, Hadoop, PySpark, S
 
 									<div class="border"></div>
 								
-										<p>Python | Java | PHP | SQL | JavaScript | HTML5 | CSS3</p>
+										<p>Python | Java | PHP | SQL | JavaScript | HTML | CSS</p>
 
 								
 								</div>
@@ -115,7 +114,7 @@ Frameworks: Django, Flask, jQuery, Bootstrap, Android Studio, Hadoop, PySpark, S
 									<div class="border"></div>
 
 								
-										<p>React | Django | Flask | Pandas | Hadoop | PySpark | Android Studio | Selenium | WordPress | MySQL | MongoDB</p>
+										<p>Django | Flask | Pandas | Hadoop | PySpark | Android Studio | Selenium | WordPress | JQuery</p>
 
 								
 								</div>
@@ -127,10 +126,18 @@ Frameworks: Django, Flask, jQuery, Bootstrap, Android Studio, Hadoop, PySpark, S
 								<div class="work-grid-info">
 
 									<div class="border"></div>
-													<p>Amazon AWS | Azure | Git | RESTful API’s | Linux | Windows</p>
+													<p>MySQL | MongoDB | Amazon AWS | Azure | Git | RESTful API’s | Linux | Windows</p>
 
 								</div>
 							</div>
+						</div>
+						<div class="col-md-8 col-centered w-grid animated wow fadeInup">
+						<!--Blue color: 409ba5 https://github.com/2016rshah/githubchart-api-->
+						 <img alt="ruslanski Github Contribution Chart" src="http://ghchart.rshah.org/ruslansco" style='width:100%;' border="0" alt="Null">
+						 <!-- Place this tag where you want the button to render. -->
+							<a  aria-label="Follow" class="github-button" data-size="large" href="https://github.com/ruslanski">Follow</a> <!-- Place this tag where you want the button to render. -->
+							 <a aria-label="Star ntkme/github-buttons on GitHub" class="github-button" data-icon="octicon-star" data-size="large" href="https://github.com/ruslanski/Portfolio">Star</a> <!-- Place this tag where you want the button to render. -->
+							 <a aria-label="Watch ntkme/github-buttons on GitHub" class="github-button" data-icon="octicon-eye" data-size="large" href="https://github.com/ruslanski/RusBase/subscription">Watch</a>
 						</div>
 					</div>
 
@@ -336,10 +343,10 @@ portable apps with light time-complexity. The app was built for OS troubleshooti
 <h2>CONTACT</h2>
 <div class="strip text-center"><img alt="Contact icon" src="images/title/title-chat.png"></div>
 </header>
-<div class="col-md-10">
+<div class="col-md-10 col-centered">
 				<h3>Drop Me A Line</h3>
 				<div class="stripb"></div>
-				<form class=" animated wow fadeInLeft" name="contactform" method="post" action="send_form_email.php">
+				<form class="input-wrapper animated wow fadeInLeft" name="contactform" method="post" action="send_form_email.php">
 							<div class="row gtr-uniform">
 								<div class="col-6 col-12-xsmall">
 									<input id="demo-name" name="name" placeholder="Name" type="text" value="">
@@ -377,11 +384,11 @@ portable apps with light time-complexity. The app was built for OS troubleshooti
 										<li><input class="primary" type="submit" name="name"id="send_submit" value="Send Message"><a href="send_form_email.p"></a></li>
 										<li><input type="reset" value="Reset"></li>
 									</ul>
-									
+												<ul class="actions"><li><div class="g-recaptcha" id='g-recaptcha2' data-sitekey="6LdM0yQaAAAAAMkHsUmu8g53NqgmRskHY-RTBR7-"></div></li></ul>
 								</div>
-<div class="g-recaptcha" data-sitekey="6LdM0yQaAAAAAMkHsUmu8g53NqgmRskHY-RTBR7-"></div>
 			</div>
 			</form>
+
 						<div class="clearfix"></div>
 			</div>
 
@@ -391,7 +398,6 @@ portable apps with light time-complexity. The app was built for OS troubleshooti
 </div>
 </div>
 <!--CONTACT FORM-->
-
 
 
  <!-- Sidebar -->
@@ -453,14 +459,12 @@ portable apps with light time-complexity. The app was built for OS troubleshooti
 <div class="stripb"></div>
 </header>
 
-<div id="container">When something is
+<div id="container">"When something is important enough,
 
  <div id="flip">
- <div><div>YOU DO IT,</div></div>
- <div><div>important enough,</div></div>
- </div>
-even if the odds are not in your favor
-</div>
+ <div><div>YOU DO IT</div></div>
+
+ </div>even if the odds are not in your favor"</div>
 <p>-Elon Mask</p>
 <br>
 		<div class="col-sm-10">
@@ -497,8 +501,11 @@ even if the odds are not in your favor
 </script> 
 <script src="assets/js/main.js">
 </script>
-
-
+<script>
+$(".input-wrapper input").focus(function() {
+    $(".input-wrapper div[id*='g-recaptcha2']").css("display","block");
+});
+</script>
 <button id="myBtn" onclick="topFunction()" title="Go to top"><i class="up"></i></button> 
 <script>
 window.onscroll = function() {scrollFunction()};
