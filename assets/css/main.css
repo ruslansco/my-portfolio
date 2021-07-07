@@ -5294,3 +5294,10 @@ div[id*='g-recaptcha1']
 {display:none;}
 div[id*='g-recaptcha2'] 
 {display:none;}
+
+@media screen and (max-width: 800px) {
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+}
